@@ -1,15 +1,15 @@
 mode: docker
 containers:
-  - name: pause
+  pause:
     deamon: true
     ipc: shareable
     ports:
-      - 9092: 9092
-      - 2181: 2181
+      - "9092:9092"
+      - "2181:2181"
     image: gcr.io/google_containers/pause-amd64:3.0
     stop: 3
   
-  - name: zookeeper
+  zookeeper:
     deamon: true
     net: container:pause
     ipc: container:pause
@@ -19,7 +19,7 @@ containers:
     image: confluentinc/cp-zookeeper:latest
     stop: 2
 
-  - name: kafka
+  kafka:
     deamon: true
     net: container:pause
     ipc: container:pause
