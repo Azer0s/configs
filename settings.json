@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "FiraCode-Retina",
+    "explorer.confirmDragAndDrop": false,
+    "go.formatTool": "goimports",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "rust-client.channel": "stable",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "terminal.integrated.rendererType": "dom",
+    "window.zoomLevel": 0,
+    "editor.fontLigatures": true
+}
