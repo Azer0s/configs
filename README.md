@@ -1,2 +1,2 @@
 # configs
-Some configurations I personally use with sane
+Some configurations I use with sane
