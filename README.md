@@ -1,26 +1,26 @@
 # configs
 Some configurations I use with sane
 
+## Repository index
+
+```bash
+sane apply Azer0s/configs/index
+```
+
 ## Kafka
 
 ```bash
-sane get Azer0s/configs/kafka
-sane alias Azer0s/configs/kafka kafka
 sane start kafka
 ```
 
 ## Nginx
 
 ```bash
-sane get Azer0s/configs/nginx
-sane alias Azer0s/configs/nginx nginx
 sane start nginx
 ```
 
 ## VSCode settings
 
 ```bash
-sane get Azer0s/configs/vscode-settings
-sane alias Azer0s/configs/vscode-settings vscodesettings
-sane apply vscodesettings
+sane apply vscode-settings
 ```
