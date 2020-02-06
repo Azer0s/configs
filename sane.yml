@@ -1,5 +1,17 @@
 mode: docker
 containers:
+  kafka:
+    deamon: true
+    net: container:pause
+    ipc: container:pause
+    pid: container:pause
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT: localhost:2181
+      - KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    image: confluentinc/cp-kafka:latest
+    start: 3
+
   pause:
     deamon: true
     ipc: shareable
@@ -18,16 +30,3 @@ containers:
       - ZOOKEEPER_CLIENT_PORT: 2181
     image: confluentinc/cp-zookeeper:latest
     start: 2
-
-  kafka:
-    deamon: true
-    net: container:pause
-    ipc: container:pause
-    pid: container:pause
-    environment:
-      - KAFKA_ZOOKEEPER_CONNECT: localhost:2181
-      - KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-    image: confluentinc/cp-kafka:latest
-    start: 3
-
