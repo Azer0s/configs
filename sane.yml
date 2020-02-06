@@ -7,7 +7,7 @@ containers:
       - "9092:9092"
       - "2181:2181"
     image: gcr.io/google_containers/pause-amd64:3.0
-    stop: 3
+    start: 1
   
   zookeeper:
     deamon: true
@@ -17,7 +17,7 @@ containers:
     environment:
       - ZOOKEEPER_CLIENT_PORT: 2181
     image: confluentinc/cp-zookeeper:latest
-    stop: 2
+    start: 2
 
   kafka:
     deamon: true
@@ -29,5 +29,5 @@ containers:
       - KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
       - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     image: confluentinc/cp-kafka:latest
-    stop: 1
+    start: 3
 
