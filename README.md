@@ -1,2 +1,2 @@
-# configs
-Some configurations I use with sane
+# vscode-settings
+My `settings.json` for vscode
