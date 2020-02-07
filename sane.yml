@@ -1,1 +1,7 @@
-
+mode: docker
+containers:
+  nginx:
+    deamon: true
+    image: bitnami/nginx:1.16
+    ports:
+      - 8080:8080
