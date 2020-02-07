@@ -11,6 +11,7 @@ containers:
       - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     image: confluentinc/cp-kafka:latest
     start: 3
+    stop: 1
 
   pause:
     deamon: true
@@ -20,6 +21,7 @@ containers:
       - "2181:2181"
     image: gcr.io/google_containers/pause-amd64:3.0
     start: 1
+    stop: 3
   
   zookeeper:
     deamon: true
@@ -30,3 +32,4 @@ containers:
       - ZOOKEEPER_CLIENT_PORT: 2181
     image: confluentinc/cp-zookeeper:latest
     start: 2
+    stop: 2
