@@ -1,2 +1,2 @@
-# configs
-Some configurations I use with sane
+# index
+A collection of config aliases for my configs
