@@ -1,2 +1,2 @@
-# configs
-Some configurations I use with sane
+# kafka
+A simple kafka configuration
