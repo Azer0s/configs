@@ -1,5 +1,6 @@
 mode: aliases
 aliases:
   - kafka: Azer0s/configs/kafka
-  - nginx: Azer0s/configs/nginx
+  - nginx-compose: Azer0s/configs/nginx
   - vscode-settings: Azer0s/configs/vscode-settings
+  - nginx: Azer0s/configs/nginx-docker
