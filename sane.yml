@@ -3,6 +3,3 @@ files:
   - file: settings.json: 
     darwin: $HOME/Library/Application Support/Code/User/settings.json
     linux: $HOME/.config/Code/User/settings.json
-  - file: test.json:
-    darwin: $HOME/Library/Application Support/Code/User/test.json
-    linux: $HOME/.config/Code/User/test.json 
