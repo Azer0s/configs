@@ -1,2 +1,2 @@
-# configs
-Some configurations I use with sane
+# nginx
+A simple nginx docker compose config
