@@ -1,5 +1,5 @@
 mode: config
 files:
-  - file: settings.json: 
+  - settings.json: 
     darwin: $HOME/Library/Application Support/Code/User/settings.json
     linux: $HOME/.config/Code/User/settings.json
