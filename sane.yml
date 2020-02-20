@@ -1,1 +1,12 @@
-
+mode: docker
+containers:
+  elk:
+    deamon: false
+    interactive: true
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"
+    volumes:
+      - "$HOME/containers/data/elk:/var/lib/elasticsearch"
+    image: sebp/elk
