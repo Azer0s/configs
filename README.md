@@ -19,6 +19,12 @@ sane start kafka
 sane start couchbase
 ```
 
+## ELK Stack
+
+```bash
+sane start elk
+```
+
 ## Nginx
 
 ```bash
