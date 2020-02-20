@@ -13,6 +13,12 @@ sane apply Azer0s/configs/index
 sane start kafka
 ```
 
+## Couchbase
+
+```bash
+sane start couchbase
+```
+
 ## Nginx
 
 ```bash
