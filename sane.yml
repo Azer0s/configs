@@ -1,1 +1,10 @@
-
+mode: docker
+containers:
+  couchbase:
+    deamon: true
+    ports:
+      - "8091-8094:8091-8094"
+      - "11210:11210"
+    volumes:
+      - "$HOME/containers/data/couchbase:/opt/couchbase/var"
+    image: couchbase:latest
