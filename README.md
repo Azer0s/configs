@@ -1,4 +1,4 @@
 # couchbase
 A simple couchbase configuration
 
-Stores data into `$HOME/containers/couchbase` 
+Stores data into `$HOME/containers/data/couchbase` 
